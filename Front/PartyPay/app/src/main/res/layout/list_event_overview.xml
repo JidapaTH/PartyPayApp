@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- TODO: Create expand view inside child view -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+
+    android:paddingBottom="@dimen/half_default_margin"
+    android:paddingEnd="@dimen/default_margin"
+    android:paddingLeft="@dimen/double_default_margin"
+    android:paddingRight="@dimen/default_margin"
+    android:paddingStart="@dimen/double_default_margin"
+    android:paddingTop="@dimen/half_default_margin">
+
+    <!-- ChildView in overview -->
+    <!-- Transaction name -->
+    <TextView
+        android:id="@+id/trans_name_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="3"
+        tools:text="Transaction 1"/>
+
+    <!-- Transaction responsible members -->
+    <TextView
+        android:id="@+id/trans_member_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        tools:text="User 1"/>
+
+    <!-- Transaction amount -->
+    <TextView
+        android:id="@+id/trans_amount_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        tools:text="1000"
+        />
+
+    <!-- Edit transaction button -->
+    <ImageView
+        android:id="@+id/trans_edit_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_info_outline_black_24dp"
+        />
+</LinearLayout>

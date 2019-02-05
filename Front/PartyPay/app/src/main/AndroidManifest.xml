@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.admin.partypay">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivityFile.MainActivity"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".AddEventFile.AddEventActivity"
+            android:label="@string/create_head"
+            android:parentActivityName=".MainActivityFile.MainActivity"/>
+        <activity android:name=".EventActivityFile.EventActivity"
+            android:label="Event"
+            android:parentActivityName=".MainActivityFile.MainActivity"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".MemberFile.MemberActivity"
+            android:label="Member"
+            android:parentActivityName=".EventActivityFile.EventActivity"/>
+        <activity android:name=".MemberFile.NewMemberActivity"
+            android:label="Select Member"
+            android:parentActivityName=".AddEventFile.AddEventActivity"/>
+        <activity android:name=".TransactionFile.AddTransactionActivity"
+            android:label="Add Transaction"
+            android:parentActivityName=".EventActivityFile.EventActivity"/>
+        <activity android:name=".SettingActivity"
+            android:label="Setting"
+            android:parentActivityName=".MainActivityFile.MainActivity"/>
+        <activity android:name=".TransactionFile.EditTransactionActivity"
+            android:label="Edit Setting"
+            android:parentActivityName=".EventActivityFile.EventActivity"/>
+    </application>
+
+  <!--<uses-permission android:name="android.permission.SET_DEBUG_APP"></uses-permission>-->
+
+</manifest>

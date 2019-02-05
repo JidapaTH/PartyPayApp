@@ -1,0 +1,108 @@
+// start emulator
+$ adb kill-server
+$ emulator -avd Nexus_6_API_25 -port 5557
+$ adb start-server
+
+// show devices
+adb devices
+
+// get root permission
+adb root
+
+// get into device's shell
+adb -s <device name> shell
+adb -s emulator-5554 shell
+
+//install app
+adb install <path_to_apk>
+
+//cd data/data/<package name>/databases/
+cd data/data/grouptransactionapp.sqllite/databases/
+cd data/data/com.example.admin.partypay/databases
+
+// sqlite3 <your-db-name>.db
+sqlite3 party_pay.db
+
+//SQLite
+	// list tables
+	.tables
+	
+	//get schema
+	.schema <tablename>
+
+	//exit
+	Ctrl-D
+
+	//get table
+	SELECT * FROM <tablename>;
+SELECT * FROM transact_table;
+SELECT * FROM events_table;
+
+2|1|Pay|2|288.0|[
+  6
+]|[
+  288.0
+]|[
+  7
+]|[
+  288.0
+]|1504805608|
+3|1|Food & Drinks|0|400.0|[
+  0,
+  1
+]|[
+  200.0,
+  200.0
+]|[
+  6,
+  7
+]|[
+  200.0,
+  200.0
+]|1504807287|
+4|1|Food & Drinks|0|300.0|[
+  0,
+  1,
+  0
+]|[
+  100.0,
+  100.0,
+  100.0
+]|[
+  6,
+  7
+]|[
+  150.0,
+  150.0
+]|1504972072|
+5|2|Food & Drinks|0|300.0|[
+  0,
+  1
+]|[
+  100.0,
+  200.0
+]|[
+  15,
+  16,
+  17
+]|[
+  100.0,
+  100.0,
+  100.0
+]|1504972694|
+6|1|Food & Drinks|1|3000.0|[
+  1,
+  2
+]|[
+  1500.0,
+  1500.0
+]|[
+  0,
+  1
+]|[
+  1000.0,
+  2000.0
+]|1504973077|
+
+
+|1504972072|5|2|Food & Drinks|0|300.0|[0,1]|[100.0,200.0]|[15,16,17]|[100.0,100.0,100.0]

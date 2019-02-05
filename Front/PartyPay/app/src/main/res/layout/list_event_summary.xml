@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/quarter_default_margin"
+    android:layout_marginLeft="@dimen/double_default_margin"
+    android:layout_marginRight="@dimen/double_default_margin"
+    android:layout_marginTop="@dimen/quarter_default_margin"
+    android:minHeight="36dp">
+
+    <!-- Summary listView content -->
+    <!-- Member name -->
+    <TextView
+        android:id="@+id/summary_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_medium"
+        tools:text="Member 1"/>
+
+    <!-- Currency TextView -->
+    <TextView
+        android:id="@+id/list_view_currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="@string/money_currency"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_medium"/>
+
+    <!-- Member amount of debt/credit -->
+    <TextView
+        android:id="@+id/summary_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginRight="@dimen/default_margin"
+        android:layout_toLeftOf="@id/list_view_currency"
+        android:layout_toStartOf="@id/list_view_currency"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_medium"
+        tools:text="-1000.00"/>
+</RelativeLayout>

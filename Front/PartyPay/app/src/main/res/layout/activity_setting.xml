@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/default_margin"
+    >
+
+    <!--Setting Heading-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Setting"
+        android:textSize="@dimen/text_size_extra_large"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginTop="@dimen/default_margin"
+        android:textColor="@color/black"
+        />
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="General Setting"-->
+        <!--android:textSize="@dimen/text_size_large"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:layout_marginLeft="@dimen/double_default_margin"-->
+        <!--android:textColor="@color/black"-->
+        <!--android:layout_marginTop="@dimen/default_margin"-->
+        <!--/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/default_margin"
+        >
+
+        <ImageView
+            android:id="@+id/gen_setting_lang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/default_border"
+            android:minHeight="@dimen/list_event_height"
+            android:minWidth="@dimen/list_event_height"
+            android:src="@mipmap/ic_launcher"
+            />
+
+        <TextView
+            android:id="@+id/gen_setting_txt_lang"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:text="Language"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/language_en"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:text="EN"
+            android:layout_marginLeft="@dimen/double_default_margin"
+            android:layout_marginRight="@dimen/double_default_margin"
+            android:padding="@dimen/half_default_margin"
+            android:textSize="@dimen/text_size_large"
+            android:textColor="@color/black"
+            android:background="@drawable/default_border"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/language_th"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:text="TH"
+            android:layout_marginRight="@dimen/default_margin"
+            android:padding="@dimen/half_default_margin"
+            android:textSize="@dimen/text_size_large"
+            android:textColor="@color/grey"
+            android:background="@drawable/grey_default_border"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/default_margin"
+        >
+
+        <ImageView
+            android:id="@+id/gen_setting_curr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/default_border"
+            android:minHeight="@dimen/list_event_height"
+            android:minWidth="@dimen/list_event_height"
+            android:src="@mipmap/ic_launcher"
+            />
+
+        <TextView
+            android:id="@+id/gen_setting_txt_curr"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:text="Currency"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/currency_th"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:text=" ฿"
+            android:layout_marginLeft="@dimen/double_default_margin"
+            android:layout_marginRight="@dimen/double_default_margin"
+            android:padding="@dimen/half_default_margin"
+            android:textSize="@dimen/text_size_large"
+            android:textColor="@color/black"
+            android:background="@drawable/default_border"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/currency_en"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:text=" $"
+            android:layout_marginRight="@dimen/default_margin"
+            android:padding="@dimen/half_default_margin"
+            android:textSize="@dimen/text_size_large"
+            android:textColor="@color/grey"
+            android:background="@drawable/grey_default_border"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+
+</LinearLayout>

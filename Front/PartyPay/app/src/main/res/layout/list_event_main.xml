@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/default_margin"
+    android:orientation="vertical"
+    >
+
+    <!-- Event detail bar -->
+    <RelativeLayout
+        android:id="@+id/event_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_event_height"
+        android:background="@drawable/default_border"
+        android:minHeight="@dimen/list_event_height"
+        android:layout_marginTop="2dp">
+
+        <!-- Event type icon -->
+        <ImageView
+            android:id="@+id/event_icon"
+            android:layout_width="@dimen/list_event_height"
+            android:layout_height="@dimen/list_event_height"
+            android:background="@drawable/default_border"
+            android:contentDescription=""
+            android:minHeight="@dimen/list_event_height"
+            android:minWidth="@dimen/list_event_height"
+            android:src="@mipmap/ic_launcher" />
+
+        <!-- Event name -->
+        <TextView
+            android:id="@+id/event_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/event_icon"
+            android:layout_toRightOf="@id/event_icon"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:textSize="@dimen/text_size_medium"
+            tools:text="@string/event_name" />
+
+        <!-- Dropdown arrow -->
+        <ImageView
+            android:id="@+id/event_status_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="6dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:paddingTop="6dp"
+            android:src="@drawable/ic_arrow_drop_down_circle_black_36dp"/>
+
+        <!-- Creation date -->
+        <TextView
+            android:id="@+id/event_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/event_status_arrow"
+            android:layout_toStartOf="@id/event_status_arrow"
+            android:background="@drawable/right_border"
+            android:padding="8dp"
+            android:textSize="@dimen/text_size_small"
+            tools:text="@string/event_date"
+            />
+
+    </RelativeLayout>
+
+    <!-- Status bar -->
+    <LinearLayout
+        android:id="@+id/status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_event_height"
+        android:background="@drawable/default_border"
+        android:minHeight="@dimen/list_event_height"
+        android:layout_marginBottom="2dp"
+        android:orientation="horizontal">
+
+        <!-- Favourite image -->
+        <ImageView
+            android:id="@+id/event_fav"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.00"
+            android:layout_gravity="center_vertical"
+            android:drawSelectorOnTop="true"
+            android:src="@android:drawable/btn_star_big_off"
+            />
+
+        <!-- Done image -->
+        <ImageView
+            android:id="@+id/event_done"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/list_button_height"
+            android:layout_weight="1"
+            android:drawSelectorOnTop="true"
+            android:src="@drawable/event_undone"
+            android:layout_gravity="center_vertical"
+
+            />
+
+        <!-- Delete image -->
+        <ImageView
+            android:id="@+id/event_delete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:drawSelectorOnTop="true"
+            android:src="@android:drawable/ic_menu_delete"
+            />
+    </LinearLayout>
+</LinearLayout>

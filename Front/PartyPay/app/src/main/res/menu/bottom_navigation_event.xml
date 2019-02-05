@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">>
+    <item
+        android:id="@+id/event_action_add"
+        android:enabled="true"
+        android:icon="@mipmap/ic_add_white_24dp"
+        android:title="@string/event_bar_add"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/event_action_sort"
+        android:enabled="true"
+        android:icon="@drawable/ic_done"
+        android:title="@string/event_bar_sort"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/event_action_more"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:title="@string/event_bar_more"
+        app:showAsAction="ifRoom"/>
+</menu>

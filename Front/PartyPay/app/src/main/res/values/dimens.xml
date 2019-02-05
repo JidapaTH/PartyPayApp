@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- All activities values -->
+    <!-- Margin of parent layout for all activities -->
+    <dimen name="margin_text_title">80dp</dimen>
+    <dimen name="double_default_margin">32dp</dimen>
+    <dimen name="default_margin">16dp</dimen>
+    <dimen name="half_default_margin">8dp</dimen>
+    <dimen name="quarter_default_margin">4dp</dimen>
+
+    <!-- Default size for text -->
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_medium">18sp</dimen>
+    <dimen name="text_size_large">22sp</dimen>
+    <dimen name="text_size_extra_large">30sp</dimen>
+
+    <!-- Padding between search icon and text -->
+    <dimen name="search_padding">16dp</dimen>
+
+    <!-- MainActivity values -->
+    <!-- Margin around the floating action button in MainActivity -->
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- Height of event listView -->
+    <dimen name="list_event_height">48dp</dimen>
+    <!-- Height of button in event ListView -->
+    <dimen name="list_button_height">32dp</dimen>
+
+    <!-- Margin for event's dropdown arrow  -->
+    <dimen name="arrow_margin">40dp</dimen>
+
+    <!-- AddEventActivity values -->
+    <!-- Margin for Checkbox -->
+    <dimen name="chkbox_margin">25dp</dimen>
+
+    <!-- AddTransaction activities -->
+    <dimen name="other_margin">100dp</dimen>
+    <dimen name="payer_height">150dp</dimen>
+</resources>

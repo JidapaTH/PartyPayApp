@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 The Android Open Source Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <!-- These are the options displayed in the main activity drop-down Spinner -->
+    <string-array name="array_mainactivity_search_options">
+        <item>@string/search_member</item>
+        <item>@string/search_event</item>
+    </string-array>
+
+    <!-- These are the options displayed in the add event activity drop-down Spinner -->
+    <string-array name="array_addeventactivity_search_options">
+        <item>@string/event_type_0</item>
+        <item>@string/event_type_1</item>
+        <item>@string/event_type_2</item>
+        <item>@string/event_type_3</item>
+    </string-array>
+
+    <!-- These are the options displayed in the add event activity drop-down Spinner -->
+    <string-array name="array_type_options">
+        <item>@string/transaction_type_none</item>
+        <item>@string/transaction_type_0</item>
+        <item>@string/transaction_type_1</item>
+        <item>@string/transaction_type_2</item>
+    </string-array>
+
+    <!-- These are the options displayed in the add event activity drop-down Spinner -->
+    <string-array name="array_involve_options">
+        <item>@string/transaction_involve_0</item>
+        <item>@string/transaction_involve_1</item>
+        <item>@string/transaction_involve_2</item>
+    </string-array>
+</resources>
